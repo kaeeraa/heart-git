@@ -8,6 +8,6 @@ dates=(
 for date in "${dates[@]}"; do
   echo "Creating commit for $date"
   touch heart-$date.txt
-  git add heart.txt
+  git add heart-$date.txt
   git commit --date="$date" -m "❤️ Heart commit for $date"
 done
